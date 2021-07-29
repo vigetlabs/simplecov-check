@@ -1,0 +1,14 @@
+name: 'SimpleCov Check'
+description: 'Ensure code coverage is at 100%'
+inputs:
+  minimum_coverage:
+    description: 'Percentage required to pass'
+    required: true
+    default: "100"
+  coverage_path:
+    description: 'Percentage required to pass'
+    required: true
+    default: "coverage/.last_run.json"
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
